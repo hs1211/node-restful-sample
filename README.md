@@ -2,7 +2,7 @@
 
 ## **Beginning Node JS**
 
-----------
+---
 How to start node js programming and how to make pipeline through CI programming.
 
 Exactly I am not sure about that.. Let's get start together.
@@ -25,11 +25,10 @@ Step 1. yarn init (If there isn't yarn installed in your env, please go to step 
 ```
 
 ## Tutorials Step
-----------
-
+---
 
 
 
 ## LICENSE
-----------
+---
 * See [LICENSE](LICENSE)
