@@ -1,6 +1,10 @@
 # node-restful-sample
 
+<<<<<<< HEAD
 # How to Start?
+=======
+How to Start?
+>>>>>>> 9f5f6e8ac639f27e9a05e4efc4ddf6b654c30276
 ```
 At first, I did a setup to manage the packages to use at node project.
 
