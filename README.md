@@ -1,7 +1,11 @@
 # **node-koa-restful**
 
+## **Beginning Node JS**
 
 ----------
+How to start node js programming and how to make pipeline through CI programming.
+
+Exactly I am not sure about that.. Let's get start together.
 
 
 # How to Start?
@@ -19,81 +23,13 @@ Step 1. yarn init (If there isn't yarn installed in your env, please go to step 
   How to install from empty node_modules?
         e.g) yarn install
 ```
+
+## Tutorials Step
 ----------
 
-# Print Hello world
-```
-var http= require('http');
-var server = http.createServer(function(req, res){
- res.writeHead(200);
- res.en('Hello Http');;
-});
-```
+
+
+
+## LICENSE
 ----------
-
-# Koa Hello world
-```
-What is koa?
- - New web framework(node v7.6.0 above if not, start from Step 0)
-
-Installation
-- Step 0. nvm install 7(As now node 8)
-- Step 1. yarn add koa
-
-const Koa = require('koa');
-const app = new Koa();
-
-app.use(ctx => {
-  ctx.body = 'Hello World';
-});
-
-app.listen(3000);
-
-```
-
-----------
-
-# Koa Middleware
-```
-const Koa = require('koa');
-const app = new Koa();
-
-// x-response-time
-
-app.use(async function (ctx, next) {
-  const start = new Date();
-  await next();
-  const ms = new Date() - start;
-  ctx.set('X-Response-Time', `${ms}ms`);
-});
-
-// logger
-
-app.use(async function (ctx, next) {
-  const start = new Date();
-  await next();
-  const ms = new Date() - start;
-  console.log(`${ctx.method} ${ctx.url} - ${ms}`);
-});
-
-// response
-
-app.use(ctx => {
-  ctx.body = 'Hello World';
-});
-
-app.listen(3000);
-
-```
-
-**Install PM2**
-```
-Step 0. npm install pm2 -g
-
-$ pm2 start xxxx.js --name="app_name"
-$ pm2 list
-$ pm2 show id
-$ pm2 logs app_name
-```
-
-----------
+* See [LICENSE](LICENSE)
