@@ -1,10 +1,9 @@
 # **Node Js Programming**
 
----
 What is Node?
 
 
-# Print Hello world
+## Print Hello world
 ```
 var http= require('http');
 var server = http.createServer(function(req, res){
@@ -13,7 +12,7 @@ var server = http.createServer(function(req, res){
 });
 ```
 
-**Install PM2**
+## Install PM2
 ```
 Step 0. npm install pm2 -g
 
