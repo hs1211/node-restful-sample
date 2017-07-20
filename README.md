@@ -53,7 +53,7 @@ app.listen(3000);
 
 ----------
 
-# Koa MiddleWare
+# Koa Middleware
 ```
 const Koa = require('koa');
 const app = new Koa();
@@ -83,4 +83,17 @@ app.use(ctx => {
 });
 
 app.listen(3000);
+
 ```
+
+**Install PM2**
+```
+Step 0. npm install pm2 -g
+
+$ pm2 start xxxx.js --name="app_name"
+$ pm2 list
+$ pm2 show id
+$ pm2 logs app_name
+```
+
+----------
