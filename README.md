@@ -27,8 +27,15 @@ Step 1. $ yarn init (If there isn't yarn installed in your env, please go to ste
 ## Tutorial steps
 | Tutorial        | Detail           |
 | ------------- |:-------------:|
-| NodeJS hello world| [Node Install & Run hello world](nodejs-helloworld)|
-| Koa hello world | [Add koa & Run hello world](koa-helloworld)|
+| 1. NodeJS hello world| [Node Install & Run hello world](nodejs-helloworld)|
+| 2. Koa hello world | [Add koa & Run hello world](koa-helloworld)|
+| 3. CircleCI        | [Build]|
+| 4. Dockerized      |        |
+| 5. Structure       |                 |
+| 5. Test with Jest  |                 |
+| 6. CircleCI        | [Build]|
+| 6. DB              |                 |
+
 
 
 ## Run the tests
