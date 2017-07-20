@@ -4,5 +4,8 @@
   "description": "I hope this tutorial could help newbie like us",
   "main": "index.js",
   "repository": "https://github.com/hs1211/node-restful-sample.git",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "koa": "^2.3.0"
+  }
 }
