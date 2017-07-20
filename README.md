@@ -1,5 +1,11 @@
 # node-restful-sample
+
+How to Start?
 ```
+At first, I did a setup to manage the packages to use at node project.
+
+Step 1. npm install -g yarn 
+Step 1. yarn init (If there isn't yarn installed in your env, please go to step 0)
 
 ```
 
