@@ -3,13 +3,15 @@ jobs:
   build:
     docker:
       - image: node:8.2.0
+    
+    working_directory: /4-dockerize
+
     steps:
       - checkout
 
       - setup_remote_docker
     
-    working_directory: /4-dockerize
-
+      
       - run: yarn install
         # This should go into custom primary image, here's only for the sake of explanation
       - run:
