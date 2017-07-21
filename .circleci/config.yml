@@ -3,7 +3,12 @@ jobs:
   build:
     docker:
       - image: circleci/node:8
+    working_directory: /4-dockerize
     steps:
       - checkout
       - run: yarn install
-      - run : docker build -t node_koa_service:1.0 ../4-dockerize/
+      - run : yarn test
+      - run:
+          name: Docker Image Build
+          command: |
+            docker build -t restful-node8:1.0 .

@@ -40,9 +40,13 @@ Step 1. $ yarn init (If there isn't yarn installed in your env, please go to ste
 
 ## Run the tests
 
+```
+ $yarn test
+
+```
 
 
-### LICENSE
+## LICENSE
 
 * See [LICENSE](LICENSE)
 
