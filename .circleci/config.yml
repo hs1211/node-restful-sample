@@ -4,7 +4,7 @@ jobs:
     docker:
       - image: node:8.2.0
     
-    working_directory: node-restful-sample/4-dockerize/
+    working_directory: ~/4-dockerize
 
     steps:
       - checkout
