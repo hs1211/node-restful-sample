@@ -4,7 +4,7 @@ jobs:
     docker:
       - image: node:8.2.0
     
-    working_directory: ~/node-restful-sample/4-dockerize/
+    working_directory: ~/node-restful-sample/
 
     steps:
       - checkout
@@ -28,4 +28,4 @@ jobs:
       - run:
           name: Docker Image Build
           command: |
-            docker build -t restful-node8:1.0 -f Dockerfile
+            docker build -t restful-node8:1.0 ./4-dockerize
