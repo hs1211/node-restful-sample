@@ -24,4 +24,4 @@ jobs:
       - run:
           name: Docker Image Build
           command: |
-            docker build -t restful-node8:1.0 .
+            docker build -t restful-node8:1.0 /4-dockerize
