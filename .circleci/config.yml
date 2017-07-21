@@ -1,12 +1,16 @@
 version: 2
 jobs:
   build:
+    docker:
+      - image: circleci/node:8
     
     steps:
       - checkout
       
       - run: yarn install
-      - run: docker info
+     
+      # This should go into custom primary image, here's only for the sake of explanation
+     - run: docker info
   
       - run:
           name: Docker Image Build
