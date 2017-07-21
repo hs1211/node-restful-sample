@@ -8,9 +8,7 @@ jobs:
       - checkout
       
       - run: yarn install
-     
-      # This should go into custom primary image, here's only for the sake of explanation
-     - run: docker info
+      - run: docker info
   
       - run:
           name: Docker Image Build
