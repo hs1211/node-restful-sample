@@ -6,4 +6,4 @@ jobs:
     steps:
       - checkout
       - run: yarn install
-      - run : docker build -t node_koa_service:1.0 ./4-dockerize/
+      - run : docker build -t node_koa_service:1.0 ../4-dockerize/
