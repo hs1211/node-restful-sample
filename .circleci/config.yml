@@ -2,14 +2,21 @@ version: 2
 jobs:
   build:
     docker:
-      - image: circleci/node:8
     
     steps:
       - checkout
       
       - run: yarn install
-     
-      # This should go into custom primary image, here's only for the sake of explanation   
+
+  
+      - run: docker info
+      - run: docker build --rm=false -t restful-node8:1.0 .
+
+      - test:
+        override:
+          - docker run -d -p 9200:9200 circleci/elasticsearch; sleep 10
+          - curl --retry 10 --retry-delay 5 -v http://localhost:9200
+
       - run:
           name: Docker Image Build
           command: |
