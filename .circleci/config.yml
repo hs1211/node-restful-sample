@@ -2,8 +2,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: circleci/node:8
-    
+      - image: circleci/cci-demo-docker-primary:0.0.2
     steps:
       - checkout
       
