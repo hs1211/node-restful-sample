@@ -1,17 +1,13 @@
 version: 2
 jobs:
   build:
-    docker:
     
     steps:
       - checkout
       
       - run: yarn install
-
-  
       - run: docker info
-      - run: docker build --rm=false -t restful-node8:1.0 .
-
+  
       - run:
           name: Docker Image Build
           command: |
