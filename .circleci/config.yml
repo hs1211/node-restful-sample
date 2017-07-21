@@ -24,7 +24,6 @@ jobs:
             mv -f /tmp/docker/* /usr/bin
 
       - run: docker info
-      - run: find / -name "Dockerfile" 2>/dev/null
       
       - run:
           name: Docker Image Build
