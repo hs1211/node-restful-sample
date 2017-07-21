@@ -7,7 +7,9 @@ jobs:
       - checkout
 
       - setup_remote_docker
-      
+    
+    working_directory: /4-dockerize
+
       - run: yarn install
         # This should go into custom primary image, here's only for the sake of explanation
       - run:
@@ -24,4 +26,4 @@ jobs:
       - run:
           name: Docker Image Build
           command: |
-            docker build -t restful-node8:1.0 /4-dockerize
+            docker build -t restful-node8:1.0 .
