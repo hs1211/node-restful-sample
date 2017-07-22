@@ -29,4 +29,9 @@ jobs:
           name: Docker Image Build
           command: |
             docker build -t restful-node8:1.0 ./4-dockerize
-            docker run -it restful-node8:1.0 --name container1 /bin/ls -altr /src/app/app.js
+
+
+      - run:
+          name: Docker Executable file checking
+          command: |       
+            docker run -it  --name container1 restful-node8:1.0 /bin/ls -altr /src/app/app.js
